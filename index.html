@@ -6,7 +6,7 @@
   <!-- Design preview: keep out of search engines until launch -->
   <meta name="robots" content="noindex, nofollow">
   <title>GTG RV Repair &amp; Rentals | RV Repair, Rentals &amp; Sales in Aubrey, TX</title>
-  <meta name="description" content="Family-owned RV repair, mobile service, rentals, consignment and pre-owned sales in Aubrey, Texas. 5.0 stars on Google. Every rental is maintained by our own on-site shop.">
+  <meta name="description" content="Family-owned RV repair, collision repair, rentals, consignment and pre-owned sales in Aubrey, Texas. 5.0 stars on Google. Every rental is maintained by our own on-site shop.">
   <meta name="theme-color" content="#121110">
   <link rel="icon" href="assets/img/cropped-gtg-rv-rental-repair-service-favicon-192x192.png" sizes="192x192">
 
@@ -248,12 +248,13 @@
             <option>Routine maintenance</option>
           </select>
         </div>
-        <div class="field">
-          <label for="where">Where</label>
-          <select id="where" name="where">
-            <option>At the shop (Aubrey)</option>
-            <option>Mobile — come to me</option>
-          </select>
+        <div class="field field--date">
+          <label for="service-date">Preferred date</label>
+          <div class="field__control">
+            <input id="service-date" name="service-date" type="date">
+            <span class="field__display" aria-hidden="true"></span>
+            <svg class="field__icon" aria-hidden="true"><use href="#i-cal"/></svg>
+          </div>
         </div>
         <button class="btn btn--primary booking__submit" type="submit">
           Request a time <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
@@ -281,8 +282,8 @@
       <span class="trust__label"><strong>Warranty &amp; insurance</strong>We handle the claim paperwork</span>
     </li>
     <li class="trust__item" data-reveal>
-      <span class="trust__icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
-      <span class="trust__label"><strong>Mobile repair</strong>Our techs come to you</span>
+      <span class="trust__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+      <span class="trust__label"><strong>Most makes &amp; models</strong>Class A to horse trailers</span>
     </li>
   </ul>
 </section>
@@ -409,46 +410,6 @@
           <span class="work-order__sig">GTG Service Tech</span>
           <span class="work-order__stamp" aria-hidden="true">Good to go</span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================================
-     MOBILE REPAIR
-     =================================================================== -->
-<section class="section mobile-repair" id="mobile" aria-labelledby="mobile-title">
-  <div class="container mobile-repair__grid">
-    <figure class="truck-frame" data-reveal>
-      <img class="photo" src="assets/img/GTG-Mobile-Repair-Truck.webp" alt="GTG's white mobile repair pickup truck with red GTG RV Repair and Service branding" width="515" height="232" loading="lazy">
-      <figcaption>
-        <span>GTG mobile service unit</span>
-        <span>Aubrey &amp; surrounding area</span>
-      </figcaption>
-    </figure>
-
-    <div class="mobile-repair__copy" data-reveal>
-      <p class="eyebrow">Mobile repair</p>
-      <h2 class="section-title" id="mobile-title">Stuck at the campsite? We'll roll to you.</h2>
-      <p class="section-lede">
-        Not every repair needs a trip to the shop. Our mobile technicians bring the tools and the know-how to your driveway, storage lot or campground.
-      </p>
-
-      <!-- PLACEHOLDER: confirm mobile service radius and towns with client -->
-      <div class="radius">
-        <p class="radius__head"><span>Service radius</span><span>~30 mi from Aubrey</span></p>
-        <ul class="radius__list" role="list" aria-label="Towns we serve">
-          <li>Aubrey</li><li>Denton</li><li>Pilot Point</li>
-          <li>Little Elm</li><li>Prosper</li><li>Celina</li>
-          <li>Cross Roads</li><li>Sanger</li><li>Krugerville</li>
-        </ul>
-      </div>
-
-      <div class="btn-row">
-        <a class="btn btn--dark" href="tel:+19403347471">
-          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call 940-334-7471
-        </a>
-        <a class="btn btn--text" href="#book-service" data-tab-link="service">Request mobile service <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </div>
   </div>
@@ -661,7 +622,7 @@
     <div class="visit__copy" data-reveal>
       <p class="eyebrow">Visit the shop</p>
       <h2 class="section-title" id="visit-title">Right on 377 in Aubrey, Texas.</h2>
-      <p class="section-lede">Easy in, easy out, with room to maneuver big rigs. Swing by, call ahead, or we'll come to you.</p>
+      <p class="section-lede">Easy in, easy out, with room to maneuver big rigs. Swing by or call ahead and we'll get you on the schedule.</p>
 
       <dl class="visit__details">
         <div>
@@ -768,7 +729,6 @@
           <h2>Services</h2>
           <ul role="list">
             <li><a href="#repair">RV Repairs</a></li>
-            <li><a href="#mobile">Mobile Repair</a></li>
             <li><a href="#consign">Consignment</a></li>
             <li><a href="#sales">Sales Inventory</a></li>
           </ul>

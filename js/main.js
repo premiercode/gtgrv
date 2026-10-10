@@ -204,6 +204,13 @@
     ret.addEventListener('change', () => label(ret));
     label(pickup); label(ret);
 
+    const serviceDate = form.querySelector('#service-date');
+    if (serviceDate) {
+      serviceDate.min = iso(new Date());
+      serviceDate.addEventListener('change', () => label(serviceDate));
+      label(serviceDate);
+    }
+
     // Mockup only: prevent navigation to "#".
     form.addEventListener('submit', (e) => e.preventDefault());
   }
