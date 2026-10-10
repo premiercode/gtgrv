@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Design preview: keep out of search engines until launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>GTG RV Repair &amp; Rentals | RV Repair, Rentals &amp; Sales in Aubrey, TX</title>
+  <meta name="description" content="Family-owned RV repair, mobile service, rentals, consignment and pre-owned sales in Aubrey, Texas. 5.0 stars on Google. Every rental is maintained by our own on-site shop.">
+  <meta name="theme-color" content="#121110">
+  <link rel="icon" href="assets/img/cropped-gtg-rv-rental-repair-service-favicon-192x192.png" sizes="192x192">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@500;600&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap">
+
+  <link rel="preload" as="image" href="assets/img/rv-rental.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Flag JS early so reveal styles only apply when JS can un-hide content -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<!-- ===================================================================
+     ICON SPRITE
+     =================================================================== -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6.9 6.9l1.5-2.3L21 15.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-arrow-ne" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0 5 5l-8.9 8.9a2.1 2.1 0 0 1-3-3l8.9-8.9a4 4 0 0 1-2-2Zm0 0L18 3l3 3-3.3 3.3"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M15 3a6 6 0 1 1-5.3 8.8L3 18.5V21h3v-2h2v-2h2l1.2-1.2A6 6 0 0 1 15 3Zm1.5 4.5h.01"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M2 6h11v10H2zM13 9h4.5l3.5 3.5V16h-8M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm11 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6Zm-3.5 9 2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 11 12 4l9 7M5.5 9.5V20h13V9.5M10 20v-5h4v5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3zm0 1 9 7 9-7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-13v4.5l3 2"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v14H4zM4 10h16M8 3v4m8-4v4"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6m-6 4h6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M3 7h18M3 12h18M3 17h12"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="m5 5 14 14M19 5 5 19"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.7c0-.9.3-1.5 1.5-1.5h1.5V4.5a20 20 0 0 0-2.2-.1c-2.2 0-3.8 1.4-3.8 3.9v2.2H8v3h2.5V21h3Z"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3h-3v12.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .8.1V9.5a5.8 5.8 0 1 0 4.9 5.7V9.1a7.3 7.3 0 0 0 4.2 1.3v-3a4.3 4.3 0 0 1-4.2-4.4Z"/></symbol>
+  <symbol id="i-google" viewBox="0 0 24 24"><path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3Z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2L6.4 14Z"/><path fill="#EA4335" d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10C7.2 7.7 9.4 5.9 12 5.9Z"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================================================================
+     HEADER
+     =================================================================== -->
+<header class="site-header" data-header>
+  <div class="site-header__inner container">
+    <a class="brand" href="index.html" aria-label="GTG RV Repair &amp; Rentals, home">
+      <span class="brand__badge" aria-hidden="true"><span>GTG</span></span>
+      <span class="brand__text" aria-hidden="true">
+        <span class="brand__name">RV Repair &amp; Rentals</span>
+        <span class="brand__meta">Aubrey · Texas</span>
+      </span>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary" data-nav>
+      <ul class="primary-nav__list" role="list">
+        <li><a class="primary-nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="primary-nav__link" href="#repair">RV Repairs</a></li>
+        <li class="has-sub" data-submenu>
+          <a class="primary-nav__link" href="#fleet">RV Rentals</a>
+          <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-rentals">
+            <span class="visually-hidden">RV Rentals submenu</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg>
+          </button>
+          <ul class="subnav" id="sub-rentals" role="list">
+            <li><a href="#fleet">Our Fleet</a></li>
+            <li><a href="#rental-agreement">Rental Agreement</a></li>
+            <li><a href="#cancellation-policy">Cancellation Policy</a></li>
+          </ul>
+        </li>
+        <li><a class="primary-nav__link" href="#consign">Consignment</a></li>
+        <li><a class="primary-nav__link" href="#sales">Sales Inventory</a></li>
+        <li><a class="primary-nav__link" href="#blog">Blog</a></li>
+        <li><a class="primary-nav__link" href="#visit">Contact</a></li>
+      </ul>
+      <div class="primary-nav__mobile-cta">
+        <a class="btn btn--primary btn--block" href="#book" data-tab-link="rent">Book a rental</a>
+        <a class="btn btn--ghost btn--block" href="tel:+19403347471">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> 940-334-7471
+        </a>
+      </div>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="header-phone" href="tel:+19403347471" aria-label="Call the shop, 940-334-7471">
+        <span class="header-phone__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span class="header-phone__text" aria-hidden="true"><span class="header-phone__label">Call the shop</span>940-334-7471</span>
+      </a>
+      <a class="btn btn--primary btn--sm header-book" href="#book" data-tab-link="rent">Book now</a>
+      <!-- Without JS this jumps to the footer sitemap; JS upgrades it to a menu toggle -->
+      <a class="menu-toggle" href="#footer-nav" data-menu-toggle aria-controls="primary-nav">
+        <svg class="icon icon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon--close" aria-hidden="true"><use href="#i-close"/></svg>
+        <span class="visually-hidden">Menu</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================================================================
+     HERO
+     =================================================================== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__media" aria-hidden="true">
+    <img src="assets/img/rv-rental.webp" alt="" width="1597" height="1236" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero__texture" aria-hidden="true"></div>
+
+  <div class="hero__inner container">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--light hero__eyebrow">Repairs · Service · Rentals · Sales</p>
+
+      <h1 class="hero__title" id="hero-title">
+        <span class="line"><span>Get out</span></span>
+        <span class="line"><span>there.</span></span>
+        <span class="line line--muted"><span>We'll keep you</span></span>
+        <span class="line line--red"><span>good to go.</span></span>
+      </h1>
+
+      <p class="hero__lede">
+        North Texas RV repair, rentals and sales from a family shop that owns RVs too.<span class="hero__lede-more">
+        Every rig we rent is serviced in our own bays, so when you pick up the keys it's ready for the road.</span>
+      </p>
+
+      <div class="hero__ctas">
+        <a class="btn btn--primary btn--lg" href="#book" data-tab-link="rent">
+          <svg class="icon" aria-hidden="true"><use href="#i-key"/></svg>
+          Book a rental
+        </a>
+        <a class="btn btn--outline-light btn--lg hero__secondary" href="#book-service" data-tab-link="service">
+          <svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg>
+          Schedule service
+        </a>
+      </div>
+
+      <a class="rating-chip" href="#reviews">
+        <svg class="rating-chip__g" aria-hidden="true"><use href="#i-google"/></svg>
+        <span class="stars" role="img" aria-label="5 out of 5 stars">
+          <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+        </span>
+        <span><strong>5.0</strong> from 76 Google reviews</span>
+      </a>
+    </div>
+
+    <!-- SIGNATURE: inspection tag hanging on the rig (decorative; desktop only) -->
+    <div class="hero-tag" aria-hidden="true">
+      <div class="work-order work-order--tag" data-checklist data-checklist-auto>
+        <div class="work-order__head">
+          <span class="work-order__hole"></span>
+          <div>
+            <p class="work-order__kicker">GTG Service Dept.</p>
+            <p class="work-order__title">Pre-trip inspection</p>
+          </div>
+        </div>
+        <ul class="checklist" role="list">
+          <li style="--i:0"><span class="checklist__box"><svg><use href="#i-check"/></svg></span>Brakes &amp; bearings</li>
+          <li style="--i:1"><span class="checklist__box"><svg><use href="#i-check"/></svg></span>Roof &amp; seals</li>
+          <li style="--i:2"><span class="checklist__box"><svg><use href="#i-check"/></svg></span>A/C &amp; generator</li>
+        </ul>
+        <div class="work-order__foot">
+          <span>Tech sign-off</span>
+          <span class="work-order__stamp">Good to go</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK BOOKING BAR — tabs are pure CSS (:has) radios, works with no JS -->
+  <div class="container hero__booking-wrap" id="book">
+    <form class="booking" action="#" method="get" aria-label="Quick booking">
+      <fieldset class="booking__tabs">
+        <legend class="visually-hidden">What do you need?</legend>
+        <label class="booking__tab">
+          <input type="radio" name="intent" value="rent" checked>
+          <svg class="icon" aria-hidden="true"><use href="#i-key"/></svg> Rent an RV
+        </label>
+        <label class="booking__tab" id="book-service">
+          <input type="radio" name="intent" value="service">
+          <svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg> Book service
+        </label>
+      </fieldset>
+
+      <div class="booking__panel booking__panel--rent">
+        <div class="field field--date">
+          <label for="pickup">Pick-up</label>
+          <div class="field__control">
+            <input id="pickup" name="pickup" type="date">
+            <span class="field__display" aria-hidden="true"></span>
+            <svg class="field__icon" aria-hidden="true"><use href="#i-cal"/></svg>
+          </div>
+        </div>
+        <div class="field field--date">
+          <label for="return">Return</label>
+          <div class="field__control">
+            <input id="return" name="return" type="date">
+            <span class="field__display" aria-hidden="true"></span>
+            <svg class="field__icon" aria-hidden="true"><use href="#i-cal"/></svg>
+          </div>
+        </div>
+        <div class="field">
+          <label for="rig">Rig type</label>
+          <select id="rig" name="rig">
+            <option>Any available</option>
+            <option>Class C motorhome</option>
+            <option>Mercedes Sprinter</option>
+            <option>5th wheel (towable)</option>
+          </select>
+        </div>
+        <button class="btn btn--primary booking__submit" type="submit">
+          Check availability <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </button>
+      </div>
+
+      <div class="booking__panel booking__panel--service">
+        <div class="field">
+          <label for="unit">Your RV</label>
+          <select id="unit" name="unit">
+            <option>Class A / diesel pusher</option>
+            <option>Class B / C motorhome</option>
+            <option>5th wheel</option>
+            <option>Travel trailer</option>
+            <option>Horse trailer</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="need">Service needed</label>
+          <select id="need" name="need">
+            <option>General repair / diagnosis</option>
+            <option>A/C install or repair</option>
+            <option>Brakes &amp; wheel bearings</option>
+            <option>Collision repair</option>
+            <option>Warranty or insurance claim</option>
+            <option>Routine maintenance</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="where">Where</label>
+          <select id="where" name="where">
+            <option>At the shop (Aubrey)</option>
+            <option>Mobile — come to me</option>
+          </select>
+        </div>
+        <button class="btn btn--primary booking__submit" type="submit">
+          Request a time <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===================================================================
+     TRUST STRIP
+     =================================================================== -->
+<section class="trust" aria-label="Why customers trust GTG">
+  <ul class="trust__list container" role="list">
+    <li class="trust__item" data-reveal>
+      <span class="trust__icon"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+      <span class="trust__label"><strong>In-house fleet maintenance</strong>Rentals serviced in our own bays</span>
+    </li>
+    <li class="trust__item" data-reveal>
+      <span class="trust__icon"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
+      <span class="trust__label"><strong>Family owned</strong>RV owners serving RV owners</span>
+    </li>
+    <li class="trust__item" data-reveal>
+      <span class="trust__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+      <span class="trust__label"><strong>Warranty &amp; insurance</strong>We handle the claim paperwork</span>
+    </li>
+    <li class="trust__item" data-reveal>
+      <span class="trust__icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
+      <span class="trust__label"><strong>Mobile repair</strong>Our techs come to you</span>
+    </li>
+  </ul>
+</section>
+
+<!-- ===================================================================
+     SERVICES — FOUR PILLARS (BENTO)
+     =================================================================== -->
+<section class="section services" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <p class="eyebrow">What we do</p>
+      <h2 class="section-title" id="services-title">One shop.<br>Four ways to get rolling.</h2>
+      <p class="section-lede">From a stuck slide-out to your first family road trip, everything happens under one roof in Aubrey, by people who actually camp.</p>
+    </header>
+
+    <div class="bento">
+      <article class="pillar pillar--photo pillar--repair" id="repair" data-reveal>
+        <img class="pillar__img photo" src="assets/img/rv-repair-block-sq.webp" alt="Fifth-wheel interior with kitchen island and living area, in for service at GTG" width="500" height="500" loading="lazy">
+        <div class="pillar__body">
+          <h3 class="pillar__title">RV repair &amp; service</h3>
+          <p class="pillar__text">Class A diesel pushers to horse trailers. Collision, A/C, brakes, bearings and slide-outs, plus warranty and insurance claims handled for you.</p>
+          <ul class="pillar__tags" role="list">
+            <li>Collision</li><li>A/C installs</li><li>Brakes</li><li>Warranty claims</li>
+          </ul>
+          <a class="pillar__link stretched" href="#book-service" data-tab-link="service">Schedule service <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="pillar pillar--photo pillar--rentals" data-reveal>
+        <img class="pillar__img photo" src="assets/img/gtg-rv-gallery-7.webp" alt="Made-up queen bed inside a GTG rental motorhome" width="1648" height="1236" loading="lazy">
+        <div class="pillar__body">
+          <h3 class="pillar__title">RV rentals</h3>
+          <p class="pillar__text">Class C, Sprinter and 5th-wheel rentals at honest prices. Book online, pick up in Aubrey, go.</p>
+          <a class="pillar__link stretched" href="#fleet">See the fleet <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="pillar pillar--consign" id="consign" data-reveal>
+        <div class="pillar__body">
+          <p class="pillar__kicker">Consignment</p>
+          <h3 class="pillar__title pillar__title--big">Earn while it sits.</h3>
+          <p class="pillar__text">Sell your RV, or let it work in our rental fleet. We inspect, list and handle the rest.</p>
+          <a class="pillar__link stretched" href="#consign-info">How it works <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="pillar pillar--sales" data-reveal>
+        <div class="pdi-seal pdi-seal--tile" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="seal-circle-a" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+            <text><textPath href="#seal-circle-a" textLength="286" lengthAdjust="spacing">PRE-DELIVERY INSPECTED · REPORT AVAILABLE ·</textPath></text>
+          </svg>
+          <span>PDI</span>
+        </div>
+        <div class="pillar__body">
+          <p class="pillar__kicker">Pre-owned sales</p>
+          <h3 class="pillar__title">Inspected before it's listed.</h3>
+          <p class="pillar__text">Towables and drivables, each with a full Pre-Delivery Inspection report.</p>
+          <a class="pillar__link stretched" href="#sales">Browse inventory <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <p class="credit-line" data-reveal>
+      <span>Genuine parts</span><span aria-hidden="true">·</span><span>Forest River</span><span aria-hidden="true">·</span><span>Interstate Batteries</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===================================================================
+     DIFFERENTIATOR — FLEET MAINTAINED BY OUR OWN SHOP
+     =================================================================== -->
+<section class="section shop-story" aria-labelledby="story-title">
+  <div class="shop-story__texture" aria-hidden="true"></div>
+  <div class="container shop-story__grid">
+    <div class="shop-story__copy" data-reveal>
+      <p class="eyebrow eyebrow--light">The GTG difference</p>
+      <h2 class="section-title section-title--light" id="story-title">
+        Our rentals don't leave the lot until <em>our techs sign off.</em>
+      </h2>
+      <p class="section-lede section-lede--light">
+        Most rental outfits send the RV out and hope. We're a repair shop first. The same technicians who fix diesel pushers and handle warranty claims go over every rental between trips, so you're not the one finding the problem at a campground three states away.
+      </p>
+
+      <dl class="story-stats">
+        <div>
+          <dt>Techs on your trip</dt>
+          <dd>Same team<span>that runs our repair bays</span></dd>
+        </div>
+        <div>
+          <dt>Breakdown backup</dt>
+          <dd>One call<span>straight to the people who serviced it</span></dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="shop-story__visual">
+      <figure class="story-photo" data-reveal>
+        <img class="photo" src="assets/img/GTG-RV-repair-service-107-sq.webp" alt="A fifth-wheel trailer in the GTG service bay with its slide-out supported on a wooden frame during repair" width="500" height="500" loading="lazy">
+        <figcaption>In the bay, Aubrey TX</figcaption>
+      </figure>
+
+      <div class="work-order" data-reveal data-checklist>
+        <div class="work-order__head">
+          <span class="work-order__hole" aria-hidden="true"></span>
+          <div>
+            <p class="work-order__kicker">GTG Service Dept.</p>
+            <h3 class="work-order__title">Pre-trip inspection</h3>
+          </div>
+          <span class="work-order__id">Rental · Every trip</span>
+        </div>
+        <!-- PLACEHOLDER: confirm the actual inspection checklist items with client -->
+        <ul class="checklist" role="list">
+          <li style="--i:0"><span class="checklist__box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Roof, seams &amp; seals</li>
+          <li style="--i:1"><span class="checklist__box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Tires, brakes &amp; wheel bearings</li>
+          <li style="--i:2"><span class="checklist__box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>A/C, furnace &amp; generator</li>
+          <li style="--i:3"><span class="checklist__box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Slide-outs &amp; leveling jacks</li>
+          <li style="--i:4"><span class="checklist__box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Batteries &amp; 12V / 120V electrical</li>
+          <li style="--i:5"><span class="checklist__box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Propane, water &amp; plumbing</li>
+          <li style="--i:6"><span class="checklist__box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Cleaned &amp; sanitized interior</li>
+        </ul>
+        <div class="work-order__foot">
+          <span>Signed off by</span>
+          <span class="work-order__sig">GTG Service Tech</span>
+          <span class="work-order__stamp" aria-hidden="true">Good to go</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     MOBILE REPAIR
+     =================================================================== -->
+<section class="section mobile-repair" id="mobile" aria-labelledby="mobile-title">
+  <div class="container mobile-repair__grid">
+    <figure class="truck-frame" data-reveal>
+      <img class="photo" src="assets/img/GTG-Mobile-Repair-Truck.webp" alt="GTG's white mobile repair pickup truck with red GTG RV Repair and Service branding" width="515" height="232" loading="lazy">
+      <figcaption>
+        <span>GTG mobile service unit</span>
+        <span>Aubrey &amp; surrounding area</span>
+      </figcaption>
+    </figure>
+
+    <div class="mobile-repair__copy" data-reveal>
+      <p class="eyebrow">Mobile repair</p>
+      <h2 class="section-title" id="mobile-title">Stuck at the campsite? We'll roll to you.</h2>
+      <p class="section-lede">
+        Not every repair needs a trip to the shop. Our mobile technicians bring the tools and the know-how to your driveway, storage lot or campground.
+      </p>
+
+      <!-- PLACEHOLDER: confirm mobile service radius and towns with client -->
+      <div class="radius">
+        <p class="radius__head"><span>Service radius</span><span>~30 mi from Aubrey</span></p>
+        <ul class="radius__list" role="list" aria-label="Towns we serve">
+          <li>Aubrey</li><li>Denton</li><li>Pilot Point</li>
+          <li>Little Elm</li><li>Prosper</li><li>Celina</li>
+          <li>Cross Roads</li><li>Sanger</li><li>Krugerville</li>
+        </ul>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn--dark" href="tel:+19403347471">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call 940-334-7471
+        </a>
+        <a class="btn btn--text" href="#book-service" data-tab-link="service">Request mobile service <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     RENTAL FLEET
+     =================================================================== -->
+<section class="section fleet" id="fleet" aria-labelledby="fleet-title">
+  <div class="container">
+    <header class="section-head section-head--split" data-reveal>
+      <div class="section-head__main">
+        <p class="eyebrow">Rental fleet</p>
+        <h2 class="section-title" id="fleet-title">Pick your rig. We'll handle the rest.</h2>
+      </div>
+      <div class="section-head__aside">
+        <p class="section-lede">Affordable, spotless and shop-maintained. Book online in minutes, then pick up in Aubrey with a full walkthrough.</p>
+        <p class="fleet__docs">
+          <a href="#rental-agreement" id="rental-agreement"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg> Rental agreement (PDF)</a>
+          <a href="#cancellation-policy" id="cancellation-policy"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg> Cancellation policy</a>
+        </p>
+      </div>
+    </header>
+
+    <!-- PLACEHOLDER: fleet unit names, specs, nightly rates and inspection stamps need client confirmation -->
+    <ul class="fleet__rail" role="list" data-rail tabindex="0" aria-label="Rental fleet, scrollable">
+      <li class="rig" data-reveal>
+        <div class="rig__media">
+          <img class="photo" src="assets/img/consign-your-rv-block.webp" alt="Black and white Mercedes Sprinter motorhome parked among trees" width="1648" height="1236" loading="lazy">
+          <span class="rig__stamp"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Inspected 10/02 · Tech #3</span>
+        </div>
+        <div class="rig__body">
+          <p class="rig__class">Class C · Mercedes Sprinter</p>
+          <h3 class="rig__name">The Sprinter</h3>
+          <dl class="rig__specs">
+            <div><dt>Sleeps</dt><dd>4</dd></div>
+            <div><dt>Length</dt><dd>25&prime;</dd></div>
+            <div><dt>Drive</dt><dd>Drivable</dd></div>
+          </dl>
+          <div class="rig__foot">
+            <p class="rig__price"><span>from</span> $245<small>/night</small></p>
+            <a class="rig__cta stretched" href="#book" data-tab-link="rent">Check dates<span class="visually-hidden"> for The Sprinter</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="rig" data-reveal>
+        <div class="rig__media">
+          <img class="photo" src="assets/img/gtg-rv-gallery-2.webp" alt="White Class C motorhome with full-length awning under a clear sky" width="1648" height="1236" loading="lazy">
+          <span class="rig__stamp"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Inspected 09/28 · Tech #1</span>
+        </div>
+        <div class="rig__body">
+          <p class="rig__class">Class C · Gas</p>
+          <h3 class="rig__name">The Family Cruiser</h3>
+          <dl class="rig__specs">
+            <div><dt>Sleeps</dt><dd>7</dd></div>
+            <div><dt>Length</dt><dd>31&prime;</dd></div>
+            <div><dt>Drive</dt><dd>Drivable</dd></div>
+          </dl>
+          <div class="rig__foot">
+            <p class="rig__price"><span>from</span> $215<small>/night</small></p>
+            <a class="rig__cta stretched" href="#book" data-tab-link="rent">Check dates<span class="visually-hidden"> for The Family Cruiser</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="rig" data-reveal>
+        <div class="rig__media">
+          <!-- PLACEHOLDER: need an exterior photo of the Big Horn 5th wheel -->
+          <img class="photo" src="assets/img/gtg-rv-gallery-3.webp" alt="Bright RV interior with kitchen, dinette and bed" width="1648" height="1236" loading="lazy">
+          <span class="rig__stamp"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Inspected 10/05 · Tech #2</span>
+        </div>
+        <div class="rig__body">
+          <p class="rig__class">5th wheel · Towable</p>
+          <h3 class="rig__name">Big Horn</h3>
+          <dl class="rig__specs">
+            <div><dt>Sleeps</dt><dd>6</dd></div>
+            <div><dt>Length</dt><dd>38&prime;</dd></div>
+            <div><dt>Tow</dt><dd>&frac34;-ton+</dd></div>
+          </dl>
+          <div class="rig__foot">
+            <p class="rig__price"><span>from</span> $165<small>/night</small></p>
+            <a class="rig__cta stretched" href="#book" data-tab-link="rent">Check dates<span class="visually-hidden"> for the Big Horn</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================================================================
+     SALES INVENTORY TEASER
+     =================================================================== -->
+<section class="section sales" id="sales" aria-labelledby="sales-title">
+  <div class="container">
+    <header class="section-head section-head--split" data-reveal>
+      <div class="section-head__main">
+        <p class="eyebrow">Pre-owned sales</p>
+        <h2 class="section-title" id="sales-title">Pre-owned. Pre-inspected.</h2>
+      </div>
+      <div class="section-head__aside">
+        <p class="section-lede">Every unit on our lot gets a full Pre-Delivery Inspection by our own techs, and you can read the report before you buy. Financing and extended warranties available.</p>
+      </div>
+    </header>
+
+    <div class="sales__grid">
+      <article class="feature-unit" data-reveal>
+        <div class="feature-unit__gallery">
+          <img class="feature-unit__main photo" src="assets/img/2022-Heartland-MPG-101-1536x1086.webp" alt="Exterior of a 2022 Heartland MPG travel trailer on the GTG lot" width="1536" height="1086" loading="lazy">
+          <img class="feature-unit__thumb photo" src="assets/img/2022-Heartland-MPG-202-1536x1152.webp" alt="Heartland MPG interior kitchen and dinette" width="1536" height="1152" loading="lazy">
+          <img class="feature-unit__thumb photo" src="assets/img/2022-Heartland-MPG-204-1536x1152.webp" alt="Heartland MPG interior living area with refrigerator" width="1536" height="1152" loading="lazy">
+
+          <div class="pdi-seal pdi-seal--feature" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="seal-circle-b" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+              <text><textPath href="#seal-circle-b" textLength="286" lengthAdjust="spacing">PRE-DELIVERY INSPECTED · REPORT AVAILABLE ·</textPath></text>
+            </svg>
+            <span>PDI</span>
+          </div>
+        </div>
+        <div class="feature-unit__body">
+          <p class="rig__class">Travel trailer · Featured</p>
+          <h3 class="feature-unit__name">2022 Heartland MPG</h3>
+          <ul class="feature-unit__facts" role="list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> PDI complete, report on request</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lightweight, half-ton towable</li><!-- PLACEHOLDER: confirm tow class -->
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Financing &amp; extended warranty available</li>
+          </ul>
+          <div class="feature-unit__foot">
+            <p class="rig__price"><span>Price</span> Call for price</p><!-- PLACEHOLDER: price -->
+            <a class="btn btn--dark" href="#sales">View details<span class="visually-hidden"> for the 2022 Heartland MPG</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <div class="inventory" data-reveal>
+        <p class="inventory__head">Also on the lot</p>
+        <!-- PLACEHOLDER: confirm unit types for Melbourne / Greyhawk / Redhawk listings -->
+        <ul class="inventory__list" role="list">
+          <li><a href="#sales"><span class="inventory__year">2022</span><span class="inventory__name">Jayco Melbourne 25LP</span><span class="inventory__type">Class C motorhome</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a></li>
+          <li><a href="#sales"><span class="inventory__year">2020</span><span class="inventory__name">Jayco Greyhawk 30X</span><span class="inventory__type">Class C motorhome</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a></li>
+          <li><a href="#sales"><span class="inventory__year">2022</span><span class="inventory__name">Jayco Redhawk Bunkhouse</span><span class="inventory__type">Class C motorhome</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-ne"/></svg></a></li>
+        </ul>
+        <div class="inventory__actions">
+          <a class="btn btn--text inventory__all" href="#sales">See all inventory <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="inventory__email">Questions about a unit? <a href="mailto:sales@gtgrvrepair-rentals.com?subject=Sales%20inventory%20question">sales@gtgrvrepair-rentals.com</a></p>
+        </div>
+
+        <div class="consign-card" id="consign-info">
+          <h3>Have an RV you're not using?</h3>
+          <p>Consign it with GTG. We'll inspect it, list it and sell it, or put it to work in our rental fleet.</p>
+          <a class="btn btn--text btn--text-light" href="#consign">Consign your RV <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     TESTIMONIALS
+     =================================================================== -->
+<section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+  <div class="container reviews__grid">
+    <div class="reviews__score" data-reveal>
+      <p class="eyebrow eyebrow--light">Reviews</p>
+      <h2 class="visually-hidden" id="reviews-title">What customers say</h2>
+      <span class="score__stars" role="img" aria-label="5 out of 5 stars">
+        <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+      </span>
+      <p class="score__num">5.0</p>
+      <p class="score__meta">&ldquo;Excellent&rdquo; across <strong>76 Google reviews</strong></p>
+      <a class="btn btn--outline-light" href="https://www.google.com/maps/search/?api=1&amp;query=GTG+RV+Repair+%26+Rentals+Aubrey+TX" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-google"/></svg> Read them on Google
+      </a>
+    </div>
+
+    <figure class="quote quote--feature" data-reveal>
+      <span class="quote__tag">Wheel bearing service</span>
+      <blockquote>
+        <p>They repacked my wheel bearings and were straight with me that my brakes <em>didn't</em> need replacing. That kind of honesty is rare.</p>
+      </blockquote>
+      <figcaption><span class="quote__avatar" aria-hidden="true">P</span> Paul E. <span>Google review</span></figcaption>
+    </figure>
+
+    <div class="quotes">
+      <figure class="quote" data-reveal>
+        <span class="quote__tag">Sprinter rental</span>
+        <blockquote><p>Booking online, pickup and return were seamless. The Sprinter was perfect for our trip to Orange Beach.</p></blockquote>
+        <figcaption><span class="quote__avatar" aria-hidden="true">M</span> Manny R.</figcaption>
+      </figure>
+      <figure class="quote" data-reveal>
+        <span class="quote__tag">Warranty claim</span>
+        <blockquote><p>They handled our maintenance and the warranty claim, and never pushed extra repairs on us.</p></blockquote>
+        <figcaption><span class="quote__avatar" aria-hidden="true">D</span> Derek G.</figcaption>
+      </figure>
+      <figure class="quote" data-reveal>
+        <span class="quote__tag">Repairs</span>
+        <blockquote><p>Multiple repairs, fast turnaround and quality work every time.</p></blockquote>
+        <figcaption><span class="quote__avatar" aria-hidden="true">K</span> Kyle G.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     VISIT / LOCATION
+     =================================================================== -->
+<section class="section visit" id="visit" aria-labelledby="visit-title">
+  <div class="container visit__grid">
+    <div class="visit__copy" data-reveal>
+      <p class="eyebrow">Visit the shop</p>
+      <h2 class="section-title" id="visit-title">Right on 377 in Aubrey, Texas.</h2>
+      <p class="section-lede">Easy in, easy out, with room to maneuver big rigs. Swing by, call ahead, or we'll come to you.</p>
+
+      <dl class="visit__details">
+        <div>
+          <dt><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Address</dt>
+          <dd><address>4320 US-377<br>Aubrey, TX 76227</address></dd>
+        </div>
+        <div>
+          <dt><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Phone</dt>
+          <dd><a href="tel:+19403347471">940-334-7471</a></dd>
+        </div>
+        <div class="visit__details-email">
+          <dt><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Email</dt>
+          <dd><a href="mailto:sales@gtgrvrepair-rentals.com">sales@gtgrvrepair-rentals.com</a></dd>
+        </div>
+      </dl>
+
+      <!-- PLACEHOLDER: business hours need client confirmation -->
+      <table class="hours">
+        <caption><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Shop hours</caption>
+        <tbody>
+          <tr><th scope="row">Mon – Fri</th><td>8:00 am – 5:00 pm</td></tr>
+          <tr><th scope="row">Saturday</th><td>9:00 am – 1:00 pm</td></tr>
+          <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- PLACEHOLDER: replace stylized map with Google Maps embed (or static map image) in production -->
+    <div class="map" data-reveal>
+      <div class="map__art" role="img" aria-label="Map: GTG sits on US-377 in Aubrey, between Pilot Point to the north and Denton and Little Elm to the south">
+        <div class="map__topo" aria-hidden="true"></div>
+        <svg class="map__roads" viewBox="0 0 600 500" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+          <path class="map__road map__road--major" d="M330 -10 C 320 120, 300 200, 300 260 S 280 420, 270 520"/>
+          <path class="map__road" d="M-10 300 C 120 290, 220 270, 300 262 S 480 250, 610 230"/>
+          <path class="map__road map__road--minor" d="M80 -10 C 110 150, 140 300, 120 520"/>
+          <path class="map__road map__road--minor" d="M-10 120 C 200 140, 420 110, 610 90"/>
+          <path class="map__road map__road--minor" d="M460 -10 C 450 160, 500 320, 520 520"/>
+          <path class="map__water" d="M520 380 c 30 -20 70 -10 90 10 v 140 h -140 c 0 -60 20 -120 50 -150Z"/>
+        </svg>
+        <span class="map__label map__label--hwy" aria-hidden="true">US 377</span>
+        <span class="map__label map__label--town" style="--x:22%;--y:18%" aria-hidden="true">Pilot Point</span>
+        <span class="map__label map__label--town" style="--x:12%;--y:62%" aria-hidden="true">Denton</span>
+        <span class="map__label map__label--town" style="--x:60%;--y:66%" aria-hidden="true">Little Elm</span>
+        <div class="map__pin" aria-hidden="true">
+          <span class="map__pulse"></span>
+          <span class="map__marker"><span>GTG</span></span>
+        </div>
+      </div>
+      <a class="map__card" href="https://www.google.com/maps/search/?api=1&amp;query=4320+US-377+Aubrey+TX+76227" rel="noopener">
+        <span><strong>GTG RV Repair &amp; Rentals</strong>4320 US-377 · Aubrey, TX</span>
+        <span class="map__card-cta">Directions <svg class="icon" aria-hidden="true"><use href="#i-arrow-ne"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     FINAL CTA
+     =================================================================== -->
+<section class="final-cta" aria-labelledby="final-title">
+  <div class="final-cta__texture" aria-hidden="true"></div>
+  <div class="container final-cta__inner" data-reveal>
+    <h2 class="final-cta__title" id="final-title">Keys or repairs. <em>We're ready when you are.</em></h2>
+    <div class="final-cta__actions">
+      <a class="btn btn--light btn--lg" href="#book" data-tab-link="rent"><svg class="icon" aria-hidden="true"><use href="#i-key"/></svg> Book a rental</a>
+      <a class="btn btn--outline-light btn--lg" href="#book-service" data-tab-link="service"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg> Schedule service</a>
+      <a class="final-cta__phone" href="tel:+19403347471">or call <strong>940-334-7471</strong></a>
+    </div>
+    <div class="final-cta__seal" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs><path id="cta-circle" d="M100 100m-80 0a80 80 0 1 1 160 0a80 80 0 1 1-160 0"/></defs>
+        <text><textPath href="#cta-circle" textLength="500" lengthAdjust="spacing">REPAIRS · SERVICE · RENTALS · SALES · AUBREY, TX ·</textPath></text>
+      </svg>
+      <span class="final-cta__seal-badge"><span>GTG</span></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================================================================
+     FOOTER
+     =================================================================== -->
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" aria-label="GTG RV Repair &amp; Rentals, home">
+          <span class="brand__badge" aria-hidden="true"><span>GTG</span></span>
+          <span class="brand__text" aria-hidden="true">
+            <span class="brand__name">RV Repair &amp; Rentals</span>
+            <span class="brand__meta">Aubrey · Texas</span>
+          </span>
+        </a>
+        <p>Family owned and operated in Aubrey, Texas. Repairs, service, rentals and sales from people who own RVs too.</p>
+        <ul class="socials" role="list">
+          <li><a href="#facebook" aria-label="GTG on Facebook"><svg class="icon" aria-hidden="true"><use href="#i-fb"/></svg></a></li><!-- PLACEHOLDER: Facebook URL -->
+          <li><a href="#tiktok" aria-label="GTG on TikTok"><svg class="icon" aria-hidden="true"><use href="#i-tiktok"/></svg></a></li><!-- PLACEHOLDER: TikTok URL -->
+        </ul>
+      </div>
+
+      <nav class="site-footer__nav" id="footer-nav" aria-label="Footer">
+        <div>
+          <h2>Services</h2>
+          <ul role="list">
+            <li><a href="#repair">RV Repairs</a></li>
+            <li><a href="#mobile">Mobile Repair</a></li>
+            <li><a href="#consign">Consignment</a></li>
+            <li><a href="#sales">Sales Inventory</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Rentals</h2>
+          <ul role="list">
+            <li><a href="#fleet">Our Fleet</a></li>
+            <li><a href="#book" data-tab-link="rent">Book Online</a></li>
+            <li><a href="#rental-agreement">Rental Agreement</a></li>
+            <li><a href="#cancellation-policy">Cancellation Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#visit">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="site-footer__contact">
+        <h2>Get in touch</h2>
+        <a class="site-footer__phone" href="tel:+19403347471">940-334-7471</a>
+        <a class="site-footer__email" href="mailto:sales@gtgrvrepair-rentals.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> sales@gtgrvrepair-rentals.com</a>
+        <address>4320 US-377<br>Aubrey, TX 76227</address>
+        <p class="site-footer__hours">Mon–Fri 8–5 · Sat 9–1</p><!-- PLACEHOLDER: hours -->
+      </div>
+    </div>
+
+    <p class="site-footer__wordmark" aria-hidden="true">Good to go<span>.</span></p>
+
+    <div class="site-footer__bottom">
+      <p>&copy; <span data-year>2026</span> GTG RV Repair &amp; Rentals. All rights reserved.</p>
+      <p><a href="#privacy">Privacy</a> · <a href="#terms">Terms</a></p><!-- PLACEHOLDER: legal pages -->
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
