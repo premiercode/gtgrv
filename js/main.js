@@ -211,8 +211,19 @@
       label(serviceDate);
     }
 
-    // Mockup only: prevent navigation to "#".
-    form.addEventListener('submit', (e) => e.preventDefault());
+    // Rent: hand the dates to the Wheelbase store on rentals.html, which
+    // reads ?wb_from / ?wb_to (YYYY-MM-DD) itself. Service is still a mockup.
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (form.dataset.intent !== 'rent') return;
+      const params = new URLSearchParams();
+      if (pickup.value && ret.value) {
+        params.set('wb_from', pickup.value);
+        params.set('wb_to', ret.value);
+      }
+      const qs = params.toString();
+      window.location.href = `${form.getAttribute('action')}${qs ? `?${qs}` : ''}#rentals`;
+    });
   }
 
   /* --- Reveal-on-scroll + checklist trigger ------------------------- */

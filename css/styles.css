@@ -2854,3 +2854,70 @@
     border: 0;
   }
 }
+
+/* =====================================================================
+   RENTALS PAGE (rentals.html) — dark intro under the fixed header,
+   then the embedded Wheelbase store on the page background.
+   ===================================================================== */
+@layer sections {
+  .page-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: var(--ink);
+    color: var(--stone-300);
+    padding-block: calc(var(--header-h) + var(--space-16)) var(--space-16);
+  }
+
+  .page-hero__texture {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--topo-dark) no-repeat right -10% center / 1400px auto;
+    opacity: 0.5;
+  }
+
+  .page-hero__inner {
+    display: grid;
+    gap: var(--space-5);
+    justify-items: start;
+    & > * { max-width: 52rem; }
+  }
+
+  .page-hero__title em { color: var(--red-bright); }
+
+  .page-hero__lede {
+    font-size: var(--fs-lede);
+    max-width: 40rem;
+  }
+
+  .page-hero__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-6);
+    padding-top: var(--space-2);
+
+    & a {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: var(--stone-50);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: color-mix(in oklch, var(--stone-50) 35%, transparent);
+      text-underline-offset: 0.25em;
+    }
+    & a:hover { text-decoration-color: var(--red-bright); }
+  }
+
+  .rentals-store {
+    padding-block: var(--space-12) var(--section-y);
+    min-height: 60svh;
+  }
+
+  .rentals-store__fallback {
+    color: var(--text-muted);
+    text-align: center;
+    padding-block: var(--space-16);
+  }
+}
